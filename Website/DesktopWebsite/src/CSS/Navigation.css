@@ -1,0 +1,50 @@
+/*
+    COLORS USED
+    ---------------
+    darkslateblue
+    ghostwhite
+    Cooldarkgray - #373738
+    darkCoolGray - #303030
+    darkerCoal - #272727
+*/
+div.navigationWrapper {
+    background: #373738;
+    width: 80vw;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-bottom: 6px double ghostwhite;
+}
+
+div.navigationWrapper > div.navigationItem {
+    text-align: center;
+    margin: 0;
+    padding: 0 1em;
+    letter-spacing: 2px;
+    border-left: 2px dotted ghostwhite;
+    border-right: 2px dotted ghostwhite;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    width: 5em;
+    justify-content: space-around;
+}
+
+div.navigationWrapper > div.navigationItem > span {
+    color: ghostwhite;
+}
+
+/*#272727(coalCool) when hovered over a selection option.*/
+div.navigationWrapper div.navigationItem:hover {
+    background: #272727;
+}
+
+div.navigationItem svg.fa-spin {
+    animation: none;
+}
+div.navigationItem:hover svg.fa-spin {
+    animation: fa-spin 5s infinite linear;
+}
